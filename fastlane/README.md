@@ -15,6 +15,11 @@ Install _fastlane_ using
 or alternatively using `brew cask install fastlane`
 
 # Available Actions
+### restore_build_number_from_tag
+```
+fastlane restore_build_number_from_tag
+```
+
 ### beta
 ```
 fastlane beta

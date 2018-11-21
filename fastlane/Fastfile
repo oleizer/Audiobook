@@ -9,7 +9,12 @@ fastlane_version "2.68.0"
 generated_fastfile_id "8541bf08-7936-4c4e-9f56-717b289870f2"
 
 default_platform :ios
-
+  # Берет максимальный тэг из репо, который состоит только из цифр. Это - наш сквозной номер билда, его мы ставим как номер билда
+  lane :restore_build_number_from_tag do
+    sh("git fetch -t")
+    max_numeric_build_number = sh("git tag -l '[0-9][!.]*' | sort -nr | head -n1").to_i
+    increment_build_number(build_number: max_numeric_build_number)
+  end
 # Fastfile actions accept additional configuration, but
 # don't worry, fastlane will prompt you for required
 # info which you can add here later
@@ -26,4 +31,18 @@ lane :beta do
     api_token: "9453b751f4670d73f8d818092e469ec60877c76c",
     build_secret: "54f0227ed4eb5753777bc7fccb16fa03c86b9b2d42a2debd381422c5a143799c"
   )
+
+
+    lane :check_commits do
+    commits_raw = sh("git log --no-merges --oneline #{ENV["DESTINATION_COMMIT_HASH"]}..#{ENV["SOURCE_COMMIT_HASH"]}")
+    commits = commits_raw.split("\n").first(100)
+    commits.each do |commit|
+      puts commit
+      if commit[/([A-Z]+\d*\-\d+)\W/] || commit.downcase.include?('merge')
+        puts 'Commit task number exists'
+      else
+        UI.abort_with_message!("Commit task number doesn't exist. Please provide correct task number for commit " + commit)
+      end
+    end
+  end
 end
