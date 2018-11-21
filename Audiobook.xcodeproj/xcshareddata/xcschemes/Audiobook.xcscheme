@@ -38,16 +38,6 @@
                ReferencedContainer = "container:Audiobook.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A65F629721A58E1C00F79957"
-               BuildableName = "AudiobookUITests.xctest"
-               BlueprintName = "AudiobookUITests"
-               ReferencedContainer = "container:Audiobook.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
