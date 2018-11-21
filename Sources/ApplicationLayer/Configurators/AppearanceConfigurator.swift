@@ -10,6 +10,7 @@ import UIKit
 
 class AppearanceConfigurator: ConfiguratorProtocol {
     func configure() {
+        print("AppearanceConfigurator")
 
 
     }

@@ -8,9 +8,6 @@ cache:
 - cocoapods
 before_install:
 - brew update
-- export IOS_SIMULATOR_UDID=`instruments -s devices | grep "iPhone SE (11.1" | awk -F '[ ]' '{print $4}' | awk -F '[\[]' '{print $2}' | sed 's/.$//'`
-- echo $IOS_SIMULATOR_UDID
-- open -a "simulator" --args -CurrentDeviceUDID $IOS_SIMULATOR_UDID
 install:
 - gem install bundler
 - bundle install
@@ -19,6 +16,6 @@ install:
 before_script:
 - export LANG=en_US.UTF-8
 script:
-- set -o pipefail && travis_retry xcodebuild -workspace Audiobook.xcworkspace -scheme Audiobook -configuration Debug -destination "id=EAF61609-DFE8-4018-9EB6-FC76CAE12296" clean test | xcpretty -f `xcpretty-travis-formatter`
+- set -o pipefail && travis_retry xcodebuild -workspace Audiobook.xcworkspace -scheme Audiobook -configuration Debug -destination "id=8303F643-76A3-4369-B02E-CA814E28B305" clean test | xcpretty -f `xcpretty-travis-formatter`
 notifications:
   email: false

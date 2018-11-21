@@ -10,6 +10,7 @@ import UIKit
 
 class ApplicationConfigurator: ConfiguratorProtocol {
     func configure() {
+        print("ApplicationConfigurator")
 
     }
 }
