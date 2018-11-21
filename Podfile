@@ -14,9 +14,4 @@ target 'Audiobook' do
     inherit! :search_paths
     unit_test_libs
   end
-
-  target 'AudiobookUITests' do
-    inherit! :search_paths
-  end
-
 end
