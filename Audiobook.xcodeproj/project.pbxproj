@@ -77,7 +77,9 @@
 		A65F627021A58E1A00F79957 = {
 			isa = PBXGroup;
 			children = (
-				A65F627B21A58E1A00F79957 /* Audiobook */,
+				A65F62AC21A58E4800F79957 /* Resources */,
+				A65F62AB21A58E3D00F79957 /* Support */,
+				A65F627B21A58E1A00F79957 /* Sources */,
 				A65F629021A58E1C00F79957 /* AudiobookTests */,
 				A65F629B21A58E1C00F79957 /* AudiobookUITests */,
 				A65F627A21A58E1A00F79957 /* Products */,
@@ -94,17 +96,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A65F627B21A58E1A00F79957 /* Audiobook */ = {
+		A65F627B21A58E1A00F79957 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				A65F627C21A58E1A00F79957 /* AppDelegate.swift */,
+				A65F62AD21A58EEC00F79957 /* Extensions */,
+				A65F62AA21A58E2A00F79957 /* ApplicationLlayer */,
 				A65F627E21A58E1A00F79957 /* ViewController.swift */,
 				A65F628021A58E1A00F79957 /* Main.storyboard */,
-				A65F628321A58E1B00F79957 /* Assets.xcassets */,
 				A65F628521A58E1B00F79957 /* LaunchScreen.storyboard */,
-				A65F628821A58E1B00F79957 /* Info.plist */,
 			);
-			path = Audiobook;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		A65F629021A58E1C00F79957 /* AudiobookTests */ = {
@@ -123,6 +124,37 @@
 				A65F629E21A58E1C00F79957 /* Info.plist */,
 			);
 			path = AudiobookUITests;
+			sourceTree = "<group>";
+		};
+		A65F62AA21A58E2A00F79957 /* ApplicationLlayer */ = {
+			isa = PBXGroup;
+			children = (
+				A65F627C21A58E1A00F79957 /* AppDelegate.swift */,
+			);
+			path = ApplicationLlayer;
+			sourceTree = "<group>";
+		};
+		A65F62AB21A58E3D00F79957 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				A65F628821A58E1B00F79957 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		A65F62AC21A58E4800F79957 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A65F628321A58E1B00F79957 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A65F62AD21A58EEC00F79957 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,7 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Audiobook/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,7 +482,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Audiobook/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
