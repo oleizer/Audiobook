@@ -1,0 +1,24 @@
+osx_image: xcode9.1
+language: objective-c
+xcode_sdk: iphonesimulator11.1
+git:
+  depth: 1
+cache:
+- bundler
+- cocoapods
+before_install:
+- brew update
+- export IOS_SIMULATOR_UDID=`instruments -s devices | grep "iPhone SE (11.1" | awk -F '[ ]' '{print $4}' | awk -F '[\[]' '{print $2}' | sed 's/.$//'`
+- echo $IOS_SIMULATOR_UDID
+- open -a "simulator" --args -CurrentDeviceUDID $IOS_SIMULATOR_UDID
+install:
+- gem install bundler
+- bundle install
+- bundle exec pod repo update --silent
+- bundle exec pod install
+before_script:
+- export LANG=en_US.UTF-8
+script:
+- set -o pipefail && travis_retry xcodebuild -workspace Audiobook.xcworkspace -scheme Audiobook -configuration Debug -destination "id=EAF61609-DFE8-4018-9EB6-FC76CAE12296" clean test | xcpretty -f `xcpretty-travis-formatter`
+notifications:
+  email: false

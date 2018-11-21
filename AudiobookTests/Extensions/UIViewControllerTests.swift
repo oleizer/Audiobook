@@ -13,12 +13,13 @@ import Nimble
 class UIViewControllerTests: QuickSpec {
     override func spec() {
         describe("UIViewController Extensions") {
-            
-            it("should wrap to UINavigation controller", closure: {
-                let viewController = UIViewController(nibName: nil, bundle: nil)
-                let navigationController = viewController.wrapToNavigationController()
-                expect(navigationController).toNot(beNil())
-                expect(navigationController.viewControllers.first).to(equal(viewController))
+            context("wraping to navigation controller", closure: {
+                it("should wrap to UINavigation controller", closure: {
+                    let viewController = UIViewController(nibName: nil, bundle: nil)
+                    let navigationController = viewController.wrapToNavigationController()
+                    expect(navigationController).toNot(beNil())
+                    expect(navigationController.viewControllers.first).to(equal(viewController))
+                })
             })
         }
     }

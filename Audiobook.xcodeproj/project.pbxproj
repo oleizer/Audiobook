@@ -18,6 +18,10 @@
 		A65F62AF21A5903000F79957 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A65F62AE21A5903000F79957 /* README.md */; };
 		A65F62B121A5908B00F79957 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F62B021A5908B00F79957 /* UIViewControllerExtensions.swift */; };
 		A65F62B321A5924600F79957 /* UIViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F62B221A5924600F79957 /* UIViewControllerTests.swift */; };
+		A65F62BA21A5944B00F79957 /* ThirdPartiesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F62B621A5944B00F79957 /* ThirdPartiesConfigurator.swift */; };
+		A65F62BB21A5944B00F79957 /* ConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F62B721A5944B00F79957 /* ConfiguratorProtocol.swift */; };
+		A65F62BC21A5944B00F79957 /* ApplicationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F62B821A5944B00F79957 /* ApplicationConfigurator.swift */; };
+		A65F62BD21A5944B00F79957 /* AppearanceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F62B921A5944B00F79957 /* AppearanceConfigurator.swift */; };
 		D71FB5BFB93D106EF4BB5346 /* Pods_AudiobookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040CE5060A5673D13B8413D2 /* Pods_AudiobookUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +64,10 @@
 		A65F62AE21A5903000F79957 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A65F62B021A5908B00F79957 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		A65F62B221A5924600F79957 /* UIViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerTests.swift; sourceTree = "<group>"; };
+		A65F62B621A5944B00F79957 /* ThirdPartiesConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdPartiesConfigurator.swift; sourceTree = "<group>"; };
+		A65F62B721A5944B00F79957 /* ConfiguratorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		A65F62B821A5944B00F79957 /* ApplicationConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationConfigurator.swift; sourceTree = "<group>"; };
+		A65F62B921A5944B00F79957 /* AppearanceConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceConfigurator.swift; sourceTree = "<group>"; };
 		AF3A798371BB93376B91684D /* Pods-AudiobookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudiobookTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudiobookTests/Pods-AudiobookTests.release.xcconfig"; sourceTree = "<group>"; };
 		BA24EB28DF27B908B9F5910A /* Pods_Audiobook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Audiobook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9148F5C611087836E5DD4A /* Pods-Audiobook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiobook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Audiobook/Pods-Audiobook.debug.xcconfig"; sourceTree = "<group>"; };
@@ -132,7 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				A65F62AD21A58EEC00F79957 /* Extensions */,
-				A65F62AA21A58E2A00F79957 /* ApplicationLlayer */,
+				A65F62AA21A58E2A00F79957 /* ApplicationLayer */,
 				A65F627E21A58E1A00F79957 /* ViewController.swift */,
 				A65F628021A58E1A00F79957 /* Main.storyboard */,
 				A65F628521A58E1B00F79957 /* LaunchScreen.storyboard */,
@@ -158,12 +166,13 @@
 			path = AudiobookUITests;
 			sourceTree = "<group>";
 		};
-		A65F62AA21A58E2A00F79957 /* ApplicationLlayer */ = {
+		A65F62AA21A58E2A00F79957 /* ApplicationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				A65F62B521A5944B00F79957 /* Configurators */,
 				A65F627C21A58E1A00F79957 /* AppDelegate.swift */,
 			);
-			path = ApplicationLlayer;
+			path = ApplicationLayer;
 			sourceTree = "<group>";
 		};
 		A65F62AB21A58E3D00F79957 /* Support */ = {
@@ -196,6 +205,17 @@
 				A65F62B221A5924600F79957 /* UIViewControllerTests.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A65F62B521A5944B00F79957 /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				A65F62B721A5944B00F79957 /* ConfiguratorProtocol.swift */,
+				A65F62B621A5944B00F79957 /* ThirdPartiesConfigurator.swift */,
+				A65F62B821A5944B00F79957 /* ApplicationConfigurator.swift */,
+				A65F62B921A5944B00F79957 /* AppearanceConfigurator.swift */,
+			);
+			path = Configurators;
 			sourceTree = "<group>";
 		};
 		F3CA7E4C60611D9ED54F8ECA /* Pods */ = {
@@ -444,9 +464,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A65F62BB21A5944B00F79957 /* ConfiguratorProtocol.swift in Sources */,
 				A65F627F21A58E1A00F79957 /* ViewController.swift in Sources */,
 				A65F62B121A5908B00F79957 /* UIViewControllerExtensions.swift in Sources */,
+				A65F62BC21A5944B00F79957 /* ApplicationConfigurator.swift in Sources */,
+				A65F62BD21A5944B00F79957 /* AppearanceConfigurator.swift in Sources */,
 				A65F627D21A58E1A00F79957 /* AppDelegate.swift in Sources */,
+				A65F62BA21A5944B00F79957 /* ThirdPartiesConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
