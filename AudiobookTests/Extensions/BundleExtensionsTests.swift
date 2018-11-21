@@ -15,7 +15,12 @@ class BundleExtensionsTests: QuickSpec {
         describe("Bundle Extensions") {
             context("wraping to navigation controller", closure: {
                 it("should wrap to UINavigation controller", closure: {
-                    let val = Bundle.main.shortVersionString()
+                    
+                    var dict = Bundle.main.infoDictionary
+                    let ver = dict?["CFBundleVersion"] as? String
+                    
+                    let val = Bundle.main.bundleVersion()
+                    expect(ver).to(equal(val))
                     
                     let viewController = UIViewController(nibName: nil, bundle: nil)
                     let navigationController = viewController.wrapToNavigationController()

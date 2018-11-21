@@ -8,10 +8,6 @@
 
 import Foundation
 
-protocol Verion {
-    var short: String? { get }
-}
-
 public extension Bundle {
     
     /**
