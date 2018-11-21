@@ -20,6 +20,21 @@ class BundleExtensionsTests: QuickSpec {
                     let actualVersion = Bundle.main.bundleVersion()
                     expect(expectableVerion).to(equal(actualVersion))
                 })
+                it("should short string verion", closure: {
+                    var expectableVerion = dict?["CFBundleShortVersionString"] as? String
+                    expectableVerion?.append(" (DEV)")
+
+                    let actualVersion = Bundle.main.shortVersionString()
+                    expect(expectableVerion).to(equal(actualVersion))
+                })
+                it("detailed short string verion", closure: {
+                    let expectableVerion = dict?["CFBundleShortVersionString"] as? String
+                    let expectableBuild = dict?["CFBundleVersion"] as? String
+                    let expectableResult = "\(expectableVerion ?? "") (\(expectableBuild ?? ""))"
+                    
+                    let actualResult = Bundle.main.detailedVersionNumber()
+                    expect(expectableResult).to(equal(actualResult))
+                })
             })
         }
     }
