@@ -26,7 +26,18 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A65F627821A58E1A00F79957"
+            BuildableName = "Audiobook.app"
+            BlueprintName = "Audiobook"
+            ReferencedContainer = "container:Audiobook.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -35,16 +46,6 @@
                BlueprintIdentifier = "A65F628C21A58E1C00F79957"
                BuildableName = "AudiobookTests.xctest"
                BlueprintName = "AudiobookTests"
-               ReferencedContainer = "container:Audiobook.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A65F629721A58E1C00F79957"
-               BuildableName = "AudiobookUITests.xctest"
-               BlueprintName = "AudiobookUITests"
                ReferencedContainer = "container:Audiobook.xcodeproj">
             </BuildableReference>
          </TestableReference>

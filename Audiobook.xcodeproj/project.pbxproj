@@ -14,7 +14,6 @@
 		A65F628221A58E1A00F79957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65F628021A58E1A00F79957 /* Main.storyboard */; };
 		A65F628421A58E1B00F79957 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65F628321A58E1B00F79957 /* Assets.xcassets */; };
 		A65F628721A58E1B00F79957 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65F628521A58E1B00F79957 /* LaunchScreen.storyboard */; };
-		A65F629D21A58E1C00F79957 /* AudiobookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F629C21A58E1C00F79957 /* AudiobookUITests.swift */; };
 		A65F62AF21A5903000F79957 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A65F62AE21A5903000F79957 /* README.md */; };
 		A65F62B121A5908B00F79957 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F62B021A5908B00F79957 /* UIViewControllerExtensions.swift */; };
 		A65F62B321A5924600F79957 /* UIViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F62B221A5924600F79957 /* UIViewControllerTests.swift */; };
@@ -22,18 +21,14 @@
 		A65F62BB21A5944B00F79957 /* ConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F62B721A5944B00F79957 /* ConfiguratorProtocol.swift */; };
 		A65F62BC21A5944B00F79957 /* ApplicationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F62B821A5944B00F79957 /* ApplicationConfigurator.swift */; };
 		A65F62BD21A5944B00F79957 /* AppearanceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F62B921A5944B00F79957 /* AppearanceConfigurator.swift */; };
-		D71FB5BFB93D106EF4BB5346 /* Pods_AudiobookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 040CE5060A5673D13B8413D2 /* Pods_AudiobookUITests.framework */; };
+		A68C143221A5A3EA000974E9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A68C143121A5A3EA000974E9 /* Settings.bundle */; };
+		A68C143421A5A455000974E9 /* SettingsBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C143321A5A455000974E9 /* SettingsBundleHelper.swift */; };
+		A68C143621A5A482000974E9 /* BundleExtenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C143521A5A482000974E9 /* BundleExtenstions.swift */; };
+		A68C143821A5A4D4000974E9 /* BundleExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C143721A5A4D4000974E9 /* BundleExtensionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		A65F628E21A58E1C00F79957 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A65F627121A58E1A00F79957 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A65F627821A58E1A00F79957;
-			remoteInfo = Audiobook;
-		};
-		A65F629921A58E1C00F79957 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A65F627121A58E1A00F79957 /* Project object */;
 			proxyType = 1;
@@ -58,9 +53,6 @@
 		A65F628821A58E1B00F79957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A65F628D21A58E1C00F79957 /* AudiobookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudiobookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65F629321A58E1C00F79957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A65F629821A58E1C00F79957 /* AudiobookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudiobookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A65F629C21A58E1C00F79957 /* AudiobookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudiobookUITests.swift; sourceTree = "<group>"; };
-		A65F629E21A58E1C00F79957 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A65F62AE21A5903000F79957 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A65F62B021A5908B00F79957 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		A65F62B221A5924600F79957 /* UIViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerTests.swift; sourceTree = "<group>"; };
@@ -68,6 +60,10 @@
 		A65F62B721A5944B00F79957 /* ConfiguratorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		A65F62B821A5944B00F79957 /* ApplicationConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationConfigurator.swift; sourceTree = "<group>"; };
 		A65F62B921A5944B00F79957 /* AppearanceConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceConfigurator.swift; sourceTree = "<group>"; };
+		A68C143121A5A3EA000974E9 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		A68C143321A5A455000974E9 /* SettingsBundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleHelper.swift; sourceTree = "<group>"; };
+		A68C143521A5A482000974E9 /* BundleExtenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtenstions.swift; sourceTree = "<group>"; };
+		A68C143721A5A4D4000974E9 /* BundleExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensionsTests.swift; sourceTree = "<group>"; };
 		AF3A798371BB93376B91684D /* Pods-AudiobookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudiobookTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudiobookTests/Pods-AudiobookTests.release.xcconfig"; sourceTree = "<group>"; };
 		BA24EB28DF27B908B9F5910A /* Pods_Audiobook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Audiobook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9148F5C611087836E5DD4A /* Pods-Audiobook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiobook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Audiobook/Pods-Audiobook.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,14 +83,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				605583E134E9630E05F4DF2D /* Pods_AudiobookTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A65F629521A58E1C00F79957 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D71FB5BFB93D106EF4BB5346 /* Pods_AudiobookUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +107,6 @@
 				A65F62AB21A58E3D00F79957 /* Support */,
 				A65F627B21A58E1A00F79957 /* Sources */,
 				A65F629021A58E1C00F79957 /* AudiobookTests */,
-				A65F629B21A58E1C00F79957 /* AudiobookUITests */,
 				A65F627A21A58E1A00F79957 /* Products */,
 				F3CA7E4C60611D9ED54F8ECA /* Pods */,
 				5F7576134490EFCDD997F52A /* Frameworks */,
@@ -131,7 +118,6 @@
 			children = (
 				A65F627921A58E1A00F79957 /* Audiobook.app */,
 				A65F628D21A58E1C00F79957 /* AudiobookTests.xctest */,
-				A65F629821A58E1C00F79957 /* AudiobookUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,20 +143,12 @@
 			path = AudiobookTests;
 			sourceTree = "<group>";
 		};
-		A65F629B21A58E1C00F79957 /* AudiobookUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A65F629C21A58E1C00F79957 /* AudiobookUITests.swift */,
-				A65F629E21A58E1C00F79957 /* Info.plist */,
-			);
-			path = AudiobookUITests;
-			sourceTree = "<group>";
-		};
 		A65F62AA21A58E2A00F79957 /* ApplicationLayer */ = {
 			isa = PBXGroup;
 			children = (
 				A65F62B521A5944B00F79957 /* Configurators */,
 				A65F627C21A58E1A00F79957 /* AppDelegate.swift */,
+				A68C143321A5A455000974E9 /* SettingsBundleHelper.swift */,
 			);
 			path = ApplicationLayer;
 			sourceTree = "<group>";
@@ -187,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				A65F628321A58E1B00F79957 /* Assets.xcassets */,
+				A68C143121A5A3EA000974E9 /* Settings.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -195,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				A65F62B021A5908B00F79957 /* UIViewControllerExtensions.swift */,
+				A68C143521A5A482000974E9 /* BundleExtenstions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -203,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				A65F62B221A5924600F79957 /* UIViewControllerTests.swift */,
+				A68C143721A5A4D4000974E9 /* BundleExtensionsTests.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -272,25 +253,6 @@
 			productReference = A65F628D21A58E1C00F79957 /* AudiobookTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A65F629721A58E1C00F79957 /* AudiobookUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A65F62A721A58E1C00F79957 /* Build configuration list for PBXNativeTarget "AudiobookUITests" */;
-			buildPhases = (
-				163AF7F8043ABEEA155F5B14 /* [CP] Check Pods Manifest.lock */,
-				A65F629421A58E1C00F79957 /* Sources */,
-				A65F629521A58E1C00F79957 /* Frameworks */,
-				A65F629621A58E1C00F79957 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A65F629A21A58E1C00F79957 /* PBXTargetDependency */,
-			);
-			name = AudiobookUITests;
-			productName = AudiobookUITests;
-			productReference = A65F629821A58E1C00F79957 /* AudiobookUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -305,10 +267,6 @@
 						CreatedOnToolsVersion = 10.1;
 					};
 					A65F628C21A58E1C00F79957 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = A65F627821A58E1A00F79957;
-					};
-					A65F629721A58E1C00F79957 = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = A65F627821A58E1A00F79957;
 					};
@@ -329,7 +287,6 @@
 			targets = (
 				A65F627821A58E1A00F79957 /* Audiobook */,
 				A65F628C21A58E1C00F79957 /* AudiobookTests */,
-				A65F629721A58E1C00F79957 /* AudiobookUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -341,19 +298,13 @@
 			files = (
 				A65F628721A58E1B00F79957 /* LaunchScreen.storyboard in Resources */,
 				A65F628421A58E1B00F79957 /* Assets.xcassets in Resources */,
+				A68C143221A5A3EA000974E9 /* Settings.bundle in Resources */,
 				A65F62AF21A5903000F79957 /* README.md in Resources */,
 				A65F628221A58E1A00F79957 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A65F628B21A58E1C00F79957 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A65F629621A58E1C00F79957 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -389,28 +340,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudiobookTests/Pods-AudiobookTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		163AF7F8043ABEEA155F5B14 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AudiobookUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5009520C38C81C15E98E7409 /* [CP] Check Pods Manifest.lock */ = {
@@ -464,6 +393,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A68C143421A5A455000974E9 /* SettingsBundleHelper.swift in Sources */,
+				A68C143621A5A482000974E9 /* BundleExtenstions.swift in Sources */,
 				A65F62BB21A5944B00F79957 /* ConfiguratorProtocol.swift in Sources */,
 				A65F627F21A58E1A00F79957 /* ViewController.swift in Sources */,
 				A65F62B121A5908B00F79957 /* UIViewControllerExtensions.swift in Sources */,
@@ -479,14 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A65F62B321A5924600F79957 /* UIViewControllerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A65F629421A58E1C00F79957 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A65F629D21A58E1C00F79957 /* AudiobookUITests.swift in Sources */,
+				A68C143821A5A4D4000974E9 /* BundleExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,11 +421,6 @@
 			isa = PBXTargetDependency;
 			target = A65F627821A58E1A00F79957 /* Audiobook */;
 			targetProxy = A65F628E21A58E1C00F79957 /* PBXContainerItemProxy */;
-		};
-		A65F629A21A58E1C00F79957 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A65F627821A58E1A00F79957 /* Audiobook */;
-			targetProxy = A65F629921A58E1C00F79957 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -651,14 +570,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AC6F95FHB4;
 				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kz.alfabank.Audiobook;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.idev.Audiobook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -673,14 +593,15 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AC6F95FHB4;
 				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kz.alfabank.Audiobook;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.idev.Audiobook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -692,6 +613,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AC6F95FHB4;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AudiobookTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -713,6 +636,8 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AC6F95FHB4;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AudiobookTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -724,46 +649,6 @@
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audiobook.app/Audiobook";
-			};
-			name = Release;
-		};
-		A65F62A821A58E1C00F79957 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7169B25657A041E95A565DF4 /* Pods-AudiobookUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AudiobookUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = kz.alfabank.AudiobookUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Audiobook;
-			};
-			name = Debug;
-		};
-		A65F62A921A58E1C00F79957 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 383E492BEF807D2B88C27D67 /* Pods-AudiobookUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AudiobookUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = kz.alfabank.AudiobookUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Audiobook;
 			};
 			name = Release;
 		};
@@ -793,15 +678,6 @@
 			buildConfigurations = (
 				A65F62A521A58E1C00F79957 /* Debug */,
 				A65F62A621A58E1C00F79957 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A65F62A721A58E1C00F79957 /* Build configuration list for PBXNativeTarget "AudiobookUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A65F62A821A58E1C00F79957 /* Debug */,
-				A65F62A921A58E1C00F79957 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
