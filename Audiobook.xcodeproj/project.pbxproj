@@ -25,6 +25,17 @@
 		A68C143421A5A455000974E9 /* SettingsBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C143321A5A455000974E9 /* SettingsBundleHelper.swift */; };
 		A68C143621A5A482000974E9 /* BundleExtenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C143521A5A482000974E9 /* BundleExtenstions.swift */; };
 		A68C143821A5A4D4000974E9 /* BundleExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C143721A5A4D4000974E9 /* BundleExtensionsTests.swift */; };
+		A68C143D21A5B85B000974E9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C143C21A5B85B000974E9 /* SettingsView.swift */; };
+		A68C144121A5B875000974E9 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C144021A5B875000974E9 /* SettingsInteractor.swift */; };
+		A68C144321A5B87D000974E9 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C144221A5B87D000974E9 /* SettingsPresenter.swift */; };
+		A68C144521A5B886000974E9 /* SettingsDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C144421A5B886000974E9 /* SettingsDataFlow.swift */; };
+		A68C144721A5B894000974E9 /* SettingsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C144621A5B894000974E9 /* SettingsAssembly.swift */; };
+		A68C144A21A5B8A9000974E9 /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C144921A5B8A9000974E9 /* Assembly.swift */; };
+		A68C144C21A5B911000974E9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C144B21A5B911000974E9 /* SettingsViewController.swift */; };
+		A68C145321A5C3C7000974E9 /* UITableViewCellExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C145221A5C3C7000974E9 /* UITableViewCellExtensions.swift */; };
+		A68C145521A5C3E5000974E9 /* UITableViewCellExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C145421A5C3E5000974E9 /* UITableViewCellExtensionsTests.swift */; };
+		A68C145721A5C41A000974E9 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C145621A5C41A000974E9 /* UITableViewExtensions.swift */; };
+		A68C145921A5C438000974E9 /* UITableViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C145821A5C438000974E9 /* UITableViewExtensionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +75,17 @@
 		A68C143321A5A455000974E9 /* SettingsBundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleHelper.swift; sourceTree = "<group>"; };
 		A68C143521A5A482000974E9 /* BundleExtenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtenstions.swift; sourceTree = "<group>"; };
 		A68C143721A5A4D4000974E9 /* BundleExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtensionsTests.swift; sourceTree = "<group>"; };
+		A68C143C21A5B85B000974E9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A68C144021A5B875000974E9 /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		A68C144221A5B87D000974E9 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		A68C144421A5B886000974E9 /* SettingsDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDataFlow.swift; sourceTree = "<group>"; };
+		A68C144621A5B894000974E9 /* SettingsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAssembly.swift; sourceTree = "<group>"; };
+		A68C144921A5B8A9000974E9 /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		A68C144B21A5B911000974E9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A68C145221A5C3C7000974E9 /* UITableViewCellExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensions.swift; sourceTree = "<group>"; };
+		A68C145421A5C3E5000974E9 /* UITableViewCellExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensionsTests.swift; sourceTree = "<group>"; };
+		A68C145621A5C41A000974E9 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		A68C145821A5C438000974E9 /* UITableViewExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensionsTests.swift; sourceTree = "<group>"; };
 		AF3A798371BB93376B91684D /* Pods-AudiobookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudiobookTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudiobookTests/Pods-AudiobookTests.release.xcconfig"; sourceTree = "<group>"; };
 		BA24EB28DF27B908B9F5910A /* Pods_Audiobook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Audiobook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9148F5C611087836E5DD4A /* Pods-Audiobook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiobook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Audiobook/Pods-Audiobook.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,8 +147,10 @@
 		A65F627B21A58E1A00F79957 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				A65F62AD21A58EEC00F79957 /* Extensions */,
 				A65F62AA21A58E2A00F79957 /* ApplicationLayer */,
+				A68C144821A5B89C000974E9 /* Protocols */,
+				A68C143921A5B836000974E9 /* Features */,
+				A65F62AD21A58EEC00F79957 /* Extensions */,
 				A65F627E21A58E1A00F79957 /* ViewController.swift */,
 				A65F628021A58E1A00F79957 /* Main.storyboard */,
 				A65F628521A58E1B00F79957 /* LaunchScreen.storyboard */,
@@ -175,6 +199,8 @@
 			children = (
 				A65F62B021A5908B00F79957 /* UIViewControllerExtensions.swift */,
 				A68C143521A5A482000974E9 /* BundleExtenstions.swift */,
+				A68C145221A5C3C7000974E9 /* UITableViewCellExtensions.swift */,
+				A68C145621A5C41A000974E9 /* UITableViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -184,6 +210,8 @@
 			children = (
 				A65F62B221A5924600F79957 /* UIViewControllerTests.swift */,
 				A68C143721A5A4D4000974E9 /* BundleExtensionsTests.swift */,
+				A68C145421A5C3E5000974E9 /* UITableViewCellExtensionsTests.swift */,
+				A68C145821A5C438000974E9 /* UITableViewExtensionsTests.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -197,6 +225,43 @@
 				A65F62B921A5944B00F79957 /* AppearanceConfigurator.swift */,
 			);
 			path = Configurators;
+			sourceTree = "<group>";
+		};
+		A68C143921A5B836000974E9 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				A68C143A21A5B841000974E9 /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		A68C143A21A5B841000974E9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A68C143B21A5B84A000974E9 /* View */,
+				A68C144421A5B886000974E9 /* SettingsDataFlow.swift */,
+				A68C144621A5B894000974E9 /* SettingsAssembly.swift */,
+				A68C144021A5B875000974E9 /* SettingsInteractor.swift */,
+				A68C144221A5B87D000974E9 /* SettingsPresenter.swift */,
+				A68C144B21A5B911000974E9 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A68C143B21A5B84A000974E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A68C143C21A5B85B000974E9 /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A68C144821A5B89C000974E9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A68C144921A5B8A9000974E9 /* Assembly.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		F3CA7E4C60611D9ED54F8ECA /* Pods */ = {
@@ -223,6 +288,12 @@
 				A65F627521A58E1A00F79957 /* Sources */,
 				A65F627621A58E1A00F79957 /* Frameworks */,
 				A65F627721A58E1A00F79957 /* Resources */,
+				A68C144D21A5B95E000974E9 /* SwiftLint */,
+				A68C144E21A5BA81000974E9 /* Start measure build time */,
+				A68C144F21A5BBA5000974E9 /* Send compile time stat */,
+				A68C145021A5BC7A000974E9 /* Send build time stat */,
+				09195F694EAA0CBA88505B39 /* [CP] Embed Pods Frameworks */,
+				A68C145121A5C0CF000974E9 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -314,6 +385,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		09195F694EAA0CBA88505B39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Audiobook/Pods-Audiobook-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Analytics/Analytics.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Analytics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Audiobook/Pods-Audiobook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		0C2A1AE0F3169E6768A599F8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,6 +467,97 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A68C144D21A5B95E000974E9 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nbundle exec swiftlint autocorrect --quiet\nbundle exec swiftlint lint --reporter \"xcode\" --quiet\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		A68C144E21A5BA81000974E9 /* Start measure build time */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start measure build time";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh ciScripts/startBuildTimeMeasure.sh\n";
+		};
+		A68C144F21A5BBA5000974E9 /* Send compile time stat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Send compile time stat";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh ciScripts/sendCompileTimeStat.sh compile\n";
+		};
+		A68C145021A5BC7A000974E9 /* Send build time stat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Send build time stat";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh ciScripts/sendCompileTimeStat.sh build\n";
+		};
+		A68C145121A5C0CF000974E9 /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = Fabric;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 9453b751f4670d73f8d818092e469ec60877c76c 54f0227ed4eb5753777bc7fccb16fa03c86b9b2d42a2debd381422c5a143799c\n";
+		};
 		CC907C1D53B5F2EB260CAB84 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -396,12 +590,21 @@
 				A68C143421A5A455000974E9 /* SettingsBundleHelper.swift in Sources */,
 				A68C143621A5A482000974E9 /* BundleExtenstions.swift in Sources */,
 				A65F62BB21A5944B00F79957 /* ConfiguratorProtocol.swift in Sources */,
+				A68C145721A5C41A000974E9 /* UITableViewExtensions.swift in Sources */,
+				A68C144521A5B886000974E9 /* SettingsDataFlow.swift in Sources */,
 				A65F627F21A58E1A00F79957 /* ViewController.swift in Sources */,
 				A65F62B121A5908B00F79957 /* UIViewControllerExtensions.swift in Sources */,
+				A68C144721A5B894000974E9 /* SettingsAssembly.swift in Sources */,
+				A68C144C21A5B911000974E9 /* SettingsViewController.swift in Sources */,
+				A68C143D21A5B85B000974E9 /* SettingsView.swift in Sources */,
+				A68C144A21A5B8A9000974E9 /* Assembly.swift in Sources */,
+				A68C144321A5B87D000974E9 /* SettingsPresenter.swift in Sources */,
+				A68C145321A5C3C7000974E9 /* UITableViewCellExtensions.swift in Sources */,
 				A65F62BC21A5944B00F79957 /* ApplicationConfigurator.swift in Sources */,
 				A65F62BD21A5944B00F79957 /* AppearanceConfigurator.swift in Sources */,
 				A65F627D21A58E1A00F79957 /* AppDelegate.swift in Sources */,
 				A65F62BA21A5944B00F79957 /* ThirdPartiesConfigurator.swift in Sources */,
+				A68C144121A5B875000974E9 /* SettingsInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +614,8 @@
 			files = (
 				A65F62B321A5924600F79957 /* UIViewControllerTests.swift in Sources */,
 				A68C143821A5A4D4000974E9 /* BundleExtensionsTests.swift in Sources */,
+				A68C145921A5C438000974E9 /* UITableViewExtensionsTests.swift in Sources */,
+				A68C145521A5C3E5000974E9 /* UITableViewCellExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,7 +780,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kz.idev.Audiobook;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.idev.audiobook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -598,7 +803,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kz.idev.Audiobook;
+				PRODUCT_BUNDLE_IDENTIFIER = kz.idev.audiobook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -12,10 +12,21 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    class var shared: AppDelegate {
+        guard let delegate = UIApplication.shared.delegate as? AppDelegate else { fatalError("AppDelegate: Invalid delegate") }
+        return delegate
+    }
     private let configs: [ConfiguratorProtocol] = [ApplicationConfigurator(), AppearanceConfigurator(), ThirdPartiesConfigurator()]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         configs.forEach { $0.configure() }
+
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        self.window = window
+
+        let viewController = SettingsAssembly().assembly().wrapToNavigationController()
+        window.rootViewController = viewController
+
         return true
     }
 
@@ -41,6 +52,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
 }
-
