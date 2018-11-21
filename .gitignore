@@ -4,3 +4,9 @@ Pods/
 *.lock
 
 Audiobook\.xcodeproj/xcuserdata/
+
+*.log
+
+*.xml
+
+Audiobook\.xcworkspace/xcuserdata/

@@ -9,7 +9,7 @@
 import Foundation
 
 public extension Bundle {
-    
+
     /**
      Функция для получения детальной версии приложения
      - returns: Строку типа **String**
@@ -48,5 +48,5 @@ public extension Bundle {
         }
         return version
     }
-    
+
 }
