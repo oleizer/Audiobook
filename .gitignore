@@ -1,0 +1,6 @@
+
+Pods/
+
+*.lock
+
+Audiobook\.xcodeproj/xcuserdata/
