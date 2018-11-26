@@ -7,7 +7,13 @@
 //
 
 import UIKit
-
+class NavBar: UINavigationBar {
+    override func sizeThatFits(_ size: CGSize) -> CGSize {
+        var amendedSize = super.sizeThatFits(size)
+        amendedSize.height += 45
+        return amendedSize
+    }
+}
 protocol SettingsDisplayLogic: class {
 }
 
@@ -28,6 +34,8 @@ class SettingsViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+
+//        navigationController?.navigationBar = NavBar()
         title = "Settings"
         navigationController?.navigationBar.prefersLargeTitles = true
     }

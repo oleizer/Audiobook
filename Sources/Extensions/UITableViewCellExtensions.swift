@@ -14,3 +14,10 @@ public extension UITableViewCell {
         return result
     }
 }
+
+public extension UITableViewHeaderFooterView {
+    public class var identifier: String {
+        let result = String(describing: self)
+        return result
+    }
+}

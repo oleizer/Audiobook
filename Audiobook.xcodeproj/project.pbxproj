@@ -36,6 +36,14 @@
 		A68C145521A5C3E5000974E9 /* UITableViewCellExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C145421A5C3E5000974E9 /* UITableViewCellExtensionsTests.swift */; };
 		A68C145721A5C41A000974E9 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C145621A5C41A000974E9 /* UITableViewExtensions.swift */; };
 		A68C145921A5C438000974E9 /* UITableViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68C145821A5C438000974E9 /* UITableViewExtensionsTests.swift */; };
+		A6D870FE21A7B466009E5DD6 /* BasicTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D870FD21A7B466009E5DD6 /* BasicTableCell.swift */; };
+		A6D8710121A7B725009E5DD6 /* BaseRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D8710021A7B725009E5DD6 /* BaseRowViewModel.swift */; };
+		A6D8710321A7B7E8009E5DD6 /* DisclosureTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D8710221A7B7E8009E5DD6 /* DisclosureTableCell.swift */; };
+		A6EEB8B421A83D9A00D60B76 /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EEB8B321A83D9A00D60B76 /* TempViewController.swift */; };
+		A6EEB8B621A8524100D60B76 /* SettingsSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EEB8B521A8524100D60B76 /* SettingsSectionHeaderView.swift */; };
+		A6EEB8C121A852AD00D60B76 /* Proxy.h in Headers */ = {isa = PBXBuildFile; fileRef = A6EEB8BF21A852AD00D60B76 /* Proxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6EEB8C421A852AD00D60B76 /* Proxy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6EEB8BD21A852AD00D60B76 /* Proxy.framework */; };
+		A6EEB8C521A852AD00D60B76 /* Proxy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A6EEB8BD21A852AD00D60B76 /* Proxy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +54,28 @@
 			remoteGlobalIDString = A65F627821A58E1A00F79957;
 			remoteInfo = Audiobook;
 		};
+		A6EEB8C221A852AD00D60B76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A65F627121A58E1A00F79957 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6EEB8BC21A852AD00D60B76;
+			remoteInfo = Proxy;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A6EEB8C921A852AD00D60B76 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A6EEB8C521A852AD00D60B76 /* Proxy.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		040CE5060A5673D13B8413D2 /* Pods_AudiobookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudiobookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +115,15 @@
 		A68C145421A5C3E5000974E9 /* UITableViewCellExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtensionsTests.swift; sourceTree = "<group>"; };
 		A68C145621A5C41A000974E9 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
 		A68C145821A5C438000974E9 /* UITableViewExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtensionsTests.swift; sourceTree = "<group>"; };
+		A6D870FD21A7B466009E5DD6 /* BasicTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTableCell.swift; sourceTree = "<group>"; };
+		A6D8710021A7B725009E5DD6 /* BaseRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRowViewModel.swift; sourceTree = "<group>"; };
+		A6D8710221A7B7E8009E5DD6 /* DisclosureTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclosureTableCell.swift; sourceTree = "<group>"; };
+		A6EEB8B321A83D9A00D60B76 /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
+		A6EEB8B521A8524100D60B76 /* SettingsSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSectionHeaderView.swift; sourceTree = "<group>"; };
+		A6EEB8B721A8527F00D60B76 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A6EEB8BD21A852AD00D60B76 /* Proxy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Proxy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6EEB8BF21A852AD00D60B76 /* Proxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Proxy.h; sourceTree = "<group>"; };
+		A6EEB8C021A852AD00D60B76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF3A798371BB93376B91684D /* Pods-AudiobookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudiobookTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudiobookTests/Pods-AudiobookTests.release.xcconfig"; sourceTree = "<group>"; };
 		BA24EB28DF27B908B9F5910A /* Pods_Audiobook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Audiobook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9148F5C611087836E5DD4A /* Pods-Audiobook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Audiobook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Audiobook/Pods-Audiobook.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19A3974B00D543E34EA56D88 /* Pods_Audiobook.framework in Frameworks */,
+				A6EEB8C421A852AD00D60B76 /* Proxy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +144,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				605583E134E9630E05F4DF2D /* Pods_AudiobookTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6EEB8BA21A852AD00D60B76 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,11 +170,13 @@
 		A65F627021A58E1A00F79957 = {
 			isa = PBXGroup;
 			children = (
+				A6EEB8B721A8527F00D60B76 /* MyPlayground.playground */,
 				A65F62AE21A5903000F79957 /* README.md */,
 				A65F62AC21A58E4800F79957 /* Resources */,
 				A65F62AB21A58E3D00F79957 /* Support */,
 				A65F627B21A58E1A00F79957 /* Sources */,
 				A65F629021A58E1C00F79957 /* AudiobookTests */,
+				A6EEB8BE21A852AD00D60B76 /* Proxy */,
 				A65F627A21A58E1A00F79957 /* Products */,
 				F3CA7E4C60611D9ED54F8ECA /* Pods */,
 				5F7576134490EFCDD997F52A /* Frameworks */,
@@ -140,6 +188,7 @@
 			children = (
 				A65F627921A58E1A00F79957 /* Audiobook.app */,
 				A65F628D21A58E1C00F79957 /* AudiobookTests.xctest */,
+				A6EEB8BD21A852AD00D60B76 /* Proxy.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,6 +279,7 @@
 		A68C143921A5B836000974E9 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				A6EEB8B221A83D8A00D60B76 /* Temp */,
 				A68C143A21A5B841000974E9 /* Settings */,
 			);
 			path = Features;
@@ -238,6 +288,7 @@
 		A68C143A21A5B841000974E9 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				A6D870FF21A7B710009E5DD6 /* Model */,
 				A68C143B21A5B84A000974E9 /* View */,
 				A68C144421A5B886000974E9 /* SettingsDataFlow.swift */,
 				A68C144621A5B894000974E9 /* SettingsAssembly.swift */,
@@ -251,6 +302,7 @@
 		A68C143B21A5B84A000974E9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A6D870FC21A6E92A009E5DD6 /* Cell */,
 				A68C143C21A5B85B000974E9 /* SettingsView.swift */,
 			);
 			path = View;
@@ -262,6 +314,42 @@
 				A68C144921A5B8A9000974E9 /* Assembly.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A6D870FC21A6E92A009E5DD6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A6D870FD21A7B466009E5DD6 /* BasicTableCell.swift */,
+				A6D8710221A7B7E8009E5DD6 /* DisclosureTableCell.swift */,
+				A6EEB8B521A8524100D60B76 /* SettingsSectionHeaderView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A6D870FF21A7B710009E5DD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6D8710021A7B725009E5DD6 /* BaseRowViewModel.swift */,
+			);
+			name = Model;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A6EEB8B221A83D8A00D60B76 /* Temp */ = {
+			isa = PBXGroup;
+			children = (
+				A6EEB8B321A83D9A00D60B76 /* TempViewController.swift */,
+			);
+			path = Temp;
+			sourceTree = "<group>";
+		};
+		A6EEB8BE21A852AD00D60B76 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				A6EEB8BF21A852AD00D60B76 /* Proxy.h */,
+				A6EEB8C021A852AD00D60B76 /* Info.plist */,
+			);
+			path = Proxy;
 			sourceTree = "<group>";
 		};
 		F3CA7E4C60611D9ED54F8ECA /* Pods */ = {
@@ -279,6 +367,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A6EEB8B821A852AD00D60B76 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6EEB8C121A852AD00D60B76 /* Proxy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		A65F627821A58E1A00F79957 /* Audiobook */ = {
 			isa = PBXNativeTarget;
@@ -294,10 +393,12 @@
 				A68C145021A5BC7A000974E9 /* Send build time stat */,
 				09195F694EAA0CBA88505B39 /* [CP] Embed Pods Frameworks */,
 				A68C145121A5C0CF000974E9 /* Fabric */,
+				A6EEB8C921A852AD00D60B76 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A6EEB8C321A852AD00D60B76 /* PBXTargetDependency */,
 			);
 			name = Audiobook;
 			productName = Audiobook;
@@ -324,6 +425,24 @@
 			productReference = A65F628D21A58E1C00F79957 /* AudiobookTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A6EEB8BC21A852AD00D60B76 /* Proxy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6EEB8C621A852AD00D60B76 /* Build configuration list for PBXNativeTarget "Proxy" */;
+			buildPhases = (
+				A6EEB8B821A852AD00D60B76 /* Headers */,
+				A6EEB8B921A852AD00D60B76 /* Sources */,
+				A6EEB8BA21A852AD00D60B76 /* Frameworks */,
+				A6EEB8BB21A852AD00D60B76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Proxy;
+			productName = Proxy;
+			productReference = A6EEB8BD21A852AD00D60B76 /* Proxy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -340,6 +459,9 @@
 					A65F628C21A58E1C00F79957 = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = A65F627821A58E1A00F79957;
+					};
+					A6EEB8BC21A852AD00D60B76 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -358,6 +480,7 @@
 			targets = (
 				A65F627821A58E1A00F79957 /* Audiobook */,
 				A65F628C21A58E1C00F79957 /* AudiobookTests */,
+				A6EEB8BC21A852AD00D60B76 /* Proxy */,
 			);
 		};
 /* End PBXProject section */
@@ -376,6 +499,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A65F628B21A58E1C00F79957 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6EEB8BB21A852AD00D60B76 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -589,21 +719,26 @@
 			files = (
 				A68C143421A5A455000974E9 /* SettingsBundleHelper.swift in Sources */,
 				A68C143621A5A482000974E9 /* BundleExtenstions.swift in Sources */,
+				A6D8710321A7B7E8009E5DD6 /* DisclosureTableCell.swift in Sources */,
 				A65F62BB21A5944B00F79957 /* ConfiguratorProtocol.swift in Sources */,
 				A68C145721A5C41A000974E9 /* UITableViewExtensions.swift in Sources */,
 				A68C144521A5B886000974E9 /* SettingsDataFlow.swift in Sources */,
 				A65F627F21A58E1A00F79957 /* ViewController.swift in Sources */,
 				A65F62B121A5908B00F79957 /* UIViewControllerExtensions.swift in Sources */,
 				A68C144721A5B894000974E9 /* SettingsAssembly.swift in Sources */,
+				A6D8710121A7B725009E5DD6 /* BaseRowViewModel.swift in Sources */,
+				A6EEB8B621A8524100D60B76 /* SettingsSectionHeaderView.swift in Sources */,
 				A68C144C21A5B911000974E9 /* SettingsViewController.swift in Sources */,
 				A68C143D21A5B85B000974E9 /* SettingsView.swift in Sources */,
 				A68C144A21A5B8A9000974E9 /* Assembly.swift in Sources */,
 				A68C144321A5B87D000974E9 /* SettingsPresenter.swift in Sources */,
 				A68C145321A5C3C7000974E9 /* UITableViewCellExtensions.swift in Sources */,
 				A65F62BC21A5944B00F79957 /* ApplicationConfigurator.swift in Sources */,
+				A6EEB8B421A83D9A00D60B76 /* TempViewController.swift in Sources */,
 				A65F62BD21A5944B00F79957 /* AppearanceConfigurator.swift in Sources */,
 				A65F627D21A58E1A00F79957 /* AppDelegate.swift in Sources */,
 				A65F62BA21A5944B00F79957 /* ThirdPartiesConfigurator.swift in Sources */,
+				A6D870FE21A7B466009E5DD6 /* BasicTableCell.swift in Sources */,
 				A68C144121A5B875000974E9 /* SettingsInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -619,6 +754,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A6EEB8B921A852AD00D60B76 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -626,6 +768,11 @@
 			isa = PBXTargetDependency;
 			target = A65F627821A58E1A00F79957 /* Audiobook */;
 			targetProxy = A65F628E21A58E1C00F79957 /* PBXContainerItemProxy */;
+		};
+		A6EEB8C321A852AD00D60B76 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6EEB8BC21A852AD00D60B76 /* Proxy */;
+			targetProxy = A6EEB8C221A852AD00D60B76 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -773,6 +920,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = AC6F95FHB4;
 				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -857,6 +1005,62 @@
 			};
 			name = Release;
 		};
+		A6EEB8C721A852AD00D60B76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AC6F95FHB4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Proxy/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kz.alfabank.Proxy;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A6EEB8C821A852AD00D60B76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AC6F95FHB4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Proxy/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kz.alfabank.Proxy;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -883,6 +1087,15 @@
 			buildConfigurations = (
 				A65F62A521A58E1C00F79957 /* Debug */,
 				A65F62A621A58E1C00F79957 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6EEB8C621A852AD00D60B76 /* Build configuration list for PBXNativeTarget "Proxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6EEB8C721A852AD00D60B76 /* Debug */,
+				A6EEB8C821A852AD00D60B76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
