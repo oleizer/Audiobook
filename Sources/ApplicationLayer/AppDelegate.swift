@@ -24,7 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
 
-        let viewController = SettingsAssembly().assembly().wrapToNavigationController()
+//        let viewController = SettingsAssembly().assembly().wrapToNavigationController()
+        let viewController = SharedMediaAssembly().assembly().wrapToNavigationController()
         window.rootViewController = viewController
 
         return true
