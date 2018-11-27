@@ -17,6 +17,8 @@ class SettingsView: UIView {
         tableView.clearTableFooterView()
         tableView.separatorStyle = .none
 //        tableView.separatorColor = .clear
+        tableView.backgroundColor = .clear
+
         tableView.registerHeaderFooter(SettingsSectionHeaderView.self)
         return tableView
     }()
@@ -32,7 +34,8 @@ class SettingsView: UIView {
     }
 
     private func setup () {
-        backgroundColor = .white
+        backgroundColor = #colorLiteral(red: 0.9803921569, green: 0.9843137255, blue: 0.9882352941, alpha: 1)
+
         addSubview(tableView)
         tableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
@@ -59,8 +62,10 @@ extension SettingsView: UITableViewDataSource, UITableViewDelegate {
 //    }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         guard let view = tableView.dequeueReusableHeaderFooter(SettingsSectionHeaderView.self) else {
+
             return 40
         }
+        _ = view.titleLabel.text
         return SettingsSectionHeaderView.defaultHeight
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

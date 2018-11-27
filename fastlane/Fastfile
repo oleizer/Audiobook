@@ -1,11 +1,7 @@
-# More documentation about how to customize your build
-# can be found here:
-# https://docs.fastlane.tools
-fastlane_version "2.68.0"
 
-# This value helps us track success metrics for Fastfiles
-# we automatically generate. Feel free to remove this line
-# once you get things running smoothly!
+
+TEMP_BUILD_FOLDER = "#{File.dirname(Dir.pwd)}/"
+
 generated_fastfile_id "8541bf08-7936-4c4e-9f56-717b289870f2"
 
 default_platform :ios
@@ -18,6 +14,16 @@ default_platform :ios
 # Fastfile actions accept additional configuration, but
 # don't worry, fastlane will prompt you for required
 # info which you can add here later
+lane :build do
+  gym(
+    output_name: "app.ipa",
+    output_directory: TEMP_BUILD_FOLDER,
+    clean: true
+    )
+end
+  lane :delete_derived_data do
+    clear_derived_data(derived_data_path: DERIVED_DATA_PATH)
+  end
 lane :beta do
   # build your iOS app
   build_app(

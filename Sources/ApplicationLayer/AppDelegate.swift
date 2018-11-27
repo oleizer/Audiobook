@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
 
 //        let viewController = SettingsAssembly().assembly().wrapToNavigationController()
-        let viewController = SharedMediaAssembly().assembly().wrapToNavigationController()
+        let viewController = SharedMediaAssembly().set(initialState: .initial(type: .picture)).assembly().wrapToNavigationController()
         window.rootViewController = viewController
 
         return true

@@ -7,7 +7,7 @@ def unit_test_libs
 end
 
 def analytics
-  pod 'Analytics'
+  #pod 'Analytics'
   pod 'Crashlytics'
   pod 'Fabric'
 end

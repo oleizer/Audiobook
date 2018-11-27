@@ -10,3 +10,7 @@ Audiobook\.xcodeproj/xcuserdata/
 *.xml
 
 Audiobook\.xcworkspace/xcuserdata/
+
+*.ipa
+
+*.zip

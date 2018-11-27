@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct SettingsAssembly: Assembly {
+public struct SettingsAssembly: Assembly {
 
     func assembly() -> UIViewController {
         var presenter = SettingsPresenter()

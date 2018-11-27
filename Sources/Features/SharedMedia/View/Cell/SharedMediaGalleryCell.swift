@@ -5,17 +5,16 @@
 import UIKit
 
 class SharedMediaGalleryCell: UICollectionViewCell {
-    private let imageView: UIImageView
+    private let imageView: UIImageView = UIImageView()
 
     override init(frame: CGRect) {
-        self.imageView = UIImageView()
-
         super.init(frame: frame)
         setupView()
     }
 
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        setupView()
     }
 
     private func setupView () {
@@ -26,13 +25,8 @@ class SharedMediaGalleryCell: UICollectionViewCell {
         imageView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
-
-//        selectedView.isHidden = true
-//
-//        contentView.addSubview(circleView)
-//        circleView.backgroundColor = .red
-//        circleView.snp.makeConstraints { make in
-//            make.edges.equalToSuperview()
-//        }
+    }
+    func configure(with image: UIImage) {
+        imageView.image = image
     }
 }

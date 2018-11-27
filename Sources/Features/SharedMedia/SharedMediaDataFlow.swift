@@ -4,10 +4,15 @@
 
 import Foundation
 
-enum SharedMedia {
+public enum SharedMedia {
     enum FetchItems {
         struct Request {
-            let type: Int
+            let type: MediaType
         }
+    }
+
+    public enum MediaType {
+        case picture
+        case video
     }
 }

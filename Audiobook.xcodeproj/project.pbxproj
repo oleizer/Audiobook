@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		19A3974B00D543E34EA56D88 /* Pods_Audiobook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA24EB28DF27B908B9F5910A /* Pods_Audiobook.framework */; };
 		605583E134E9630E05F4DF2D /* Pods_AudiobookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55954B99852D28940A888C0D /* Pods_AudiobookTests.framework */; };
+		A65D4AA021AD5F13009F479E /* SharedMediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D4A9F21AD5F13009F479E /* SharedMediaModel.swift */; };
+		A65D4AA221AD6048009F479E /* PlaceholderSharedMediaGalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D4AA121AD6048009F479E /* PlaceholderSharedMediaGalleryCell.swift */; };
+		A65D4AA521AD6099009F479E /* LoadingCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D4AA421AD6099009F479E /* LoadingCollectionViewDataSource.swift */; };
 		A65F627D21A58E1A00F79957 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F627C21A58E1A00F79957 /* AppDelegate.swift */; };
 		A65F627F21A58E1A00F79957 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65F627E21A58E1A00F79957 /* ViewController.swift */; };
 		A65F628221A58E1A00F79957 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A65F628021A58E1A00F79957 /* Main.storyboard */; };
@@ -93,6 +96,9 @@
 		55954B99852D28940A888C0D /* Pods_AudiobookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudiobookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7169B25657A041E95A565DF4 /* Pods-AudiobookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudiobookUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudiobookUITests/Pods-AudiobookUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A5FCF8D66EC8DE4DD39C357B /* Pods-AudiobookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudiobookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudiobookTests/Pods-AudiobookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A65D4A9F21AD5F13009F479E /* SharedMediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedMediaModel.swift; sourceTree = "<group>"; };
+		A65D4AA121AD6048009F479E /* PlaceholderSharedMediaGalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderSharedMediaGalleryCell.swift; sourceTree = "<group>"; };
+		A65D4AA421AD6099009F479E /* LoadingCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		A65F627921A58E1A00F79957 /* Audiobook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Audiobook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65F627C21A58E1A00F79957 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A65F627E21A58E1A00F79957 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -185,6 +191,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A65C380121AC56FF00E6AC0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A65D4A9F21AD5F13009F479E /* SharedMediaModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A65D4A9C21AD1E28009F479E /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		A65D4AA321AD605F009F479E /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				A65D4AA421AD6099009F479E /* LoadingCollectionViewDataSource.swift */,
+			);
+			name = UIComponents;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		A65F627021A58E1A00F79957 = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +244,7 @@
 		A65F627B21A58E1A00F79957 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A65D4AA321AD605F009F479E /* UIComponents */,
 				A65F62AA21A58E2A00F79957 /* ApplicationLayer */,
 				A68C144821A5B89C000974E9 /* Protocols */,
 				A68C143921A5B836000974E9 /* Features */,
@@ -298,6 +329,8 @@
 		A676B07E21ABD6DA00E9DF22 /* SharedMedia */ = {
 			isa = PBXGroup;
 			children = (
+				A65D4A9C21AD1E28009F479E /* Provider */,
+				A65C380121AC56FF00E6AC0F /* Model */,
 				A676B08321ABD74200E9DF22 /* View */,
 				A676B08B21ABF1E300E9DF22 /* SharedMediaDataFlow.swift */,
 				A676B08121ABD71500E9DF22 /* SharedMediaAssembly.swift */,
@@ -321,6 +354,7 @@
 			isa = PBXGroup;
 			children = (
 				A676B08721ABD9A600E9DF22 /* SharedMediaGalleryCell.swift */,
+				A65D4AA121AD6048009F479E /* PlaceholderSharedMediaGalleryCell.swift */,
 				A676B0A421ABFE8A00E9DF22 /* SharedMediaGallerySectionHeader.swift */,
 			);
 			path = Cell;
@@ -576,7 +610,6 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Audiobook/Pods-Audiobook-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Analytics/Analytics.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -587,7 +620,6 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Analytics.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -769,6 +801,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A68C143421A5A455000974E9 /* SettingsBundleHelper.swift in Sources */,
+				A65D4AA521AD6099009F479E /* LoadingCollectionViewDataSource.swift in Sources */,
 				A68C143621A5A482000974E9 /* BundleExtenstions.swift in Sources */,
 				A6D8710321A7B7E8009E5DD6 /* DisclosureTableCell.swift in Sources */,
 				A65F62BB21A5944B00F79957 /* ConfiguratorProtocol.swift in Sources */,
@@ -784,6 +817,7 @@
 				A6EEB8B621A8524100D60B76 /* SettingsSectionHeaderView.swift in Sources */,
 				A68C144C21A5B911000974E9 /* SettingsViewController.swift in Sources */,
 				A68C143D21A5B85B000974E9 /* SettingsView.swift in Sources */,
+				A65D4AA221AD6048009F479E /* PlaceholderSharedMediaGalleryCell.swift in Sources */,
 				A68C144A21A5B8A9000974E9 /* Assembly.swift in Sources */,
 				A68C144321A5B87D000974E9 /* SettingsPresenter.swift in Sources */,
 				A68C145321A5C3C7000974E9 /* UITableViewCellExtensions.swift in Sources */,
@@ -800,6 +834,7 @@
 				A68C144121A5B875000974E9 /* SettingsInteractor.swift in Sources */,
 				A676B09221ABF36A00E9DF22 /* SharedMediaPresenter.swift in Sources */,
 				A676B08821ABD9A600E9DF22 /* SharedMediaGalleryCell.swift in Sources */,
+				A65D4AA021AD5F13009F479E /* SharedMediaModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

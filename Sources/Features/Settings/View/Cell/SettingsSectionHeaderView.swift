@@ -14,8 +14,9 @@ public class SettingsSectionHeaderView: UITableViewHeaderFooterView {
 
     let titleLabel: UILabel = {
         let label = UILabel(frame: .zero)
-        label.textColor = .green
+        label.textColor = #colorLiteral(red: 0.6, green: 0.6039215686, blue: 0.6078431373, alpha: 1)
         label.text = "Справка".uppercased()
+        label.font = UIFont.preferredFont(forTextStyle: .headline)
         return label
     }()
     public override init(reuseIdentifier: String?) {
@@ -27,8 +28,8 @@ public class SettingsSectionHeaderView: UITableViewHeaderFooterView {
         fatalError("init(coder:) has not been implemented")
     }
     private func setupView () {
-        backgroundColor = .green
-        contentView.backgroundColor = .blue
+        contentView.backgroundColor = #colorLiteral(red: 0.9803921569, green: 0.9843137255, blue: 0.9882352941, alpha: 1)
+//        contentView.backgroundColor = .blue
         addSubview(titleLabel)
 
         titleLabel.snp.makeConstraints { make in
@@ -46,7 +47,7 @@ public class SettingsSectionHeaderView: UITableViewHeaderFooterView {
 //            ])
     }
     static var defaultHeight: CGFloat {
-        return 60
+        return 45
     }
 }
 

@@ -2,6 +2,7 @@ warning_threshold: 10
 disabled_rules:
   #- superfluous_disable_command
   #- identifier_name
+  - nesting
 included:
   - Sources
 excluded:
@@ -17,7 +18,7 @@ file_length:
   error: 500
 line_length:
   warning: 300
-  error: 300 
+  error: 300
 type_name:
   excluded: T
   max_length:

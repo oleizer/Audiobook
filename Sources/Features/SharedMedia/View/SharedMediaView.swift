@@ -5,6 +5,7 @@
 import UIKit
 
 class SharedMediaView: UIView {
+    let images: [String] = ["image1", "image2", "image3", "image4"]
 
     private lazy var collectionViewLayout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
@@ -30,7 +31,7 @@ class SharedMediaView: UIView {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(SharedMediaGalleryCell.self)
-        collectionView.register(SharedMediaGallerySectionHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "SharedMediaGallerySectionHeader")
+        collectionView.register(SharedMediaGallerySectionHeader.self, supplementaryViewOfKind: .header)
         return collectionView
     }()
 
@@ -45,7 +46,7 @@ class SharedMediaView: UIView {
     }
     private func setupView () {
         backgroundColor = .white
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = #colorLiteral(red: 0.8705882353, green: 0.8901960784, blue: 0.9137254902, alpha: 1)
         addSubview(collectionView)
         collectionView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
@@ -53,22 +54,34 @@ class SharedMediaView: UIView {
     }
 }
 
-extension SharedMediaView: UICollectionViewDataSource, UICollectionViewDelegate {
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 3
+extension SharedMediaView: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: 1, height: 40)
     }
+
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 4
+    }
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
     }
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(SharedMediaGalleryCell.self, for: indexPath)
+        let random: Int = Int(arc4random()) % images.count
+        let image = UIImage(named: images[random])!
+        cell.configure(with: image)
         return cell
     }
-    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let view = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "SharedMediaGallerySectionHeader", for: indexPath)
 
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let view = collectionView.dequeueReusableSupplementaryView(ofKind: .header, withClass: SharedMediaGallerySectionHeader.self, for: indexPath)
+        view.configure(with: "Date: \(indexPath.row) - \(indexPath.section)")
         return view
     }
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("select")
     }

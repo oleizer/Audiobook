@@ -20,6 +20,16 @@ or alternatively using `brew cask install fastlane`
 fastlane restore_build_number_from_tag
 ```
 
+### build
+```
+fastlane build
+```
+
+### delete_derived_data
+```
+fastlane delete_derived_data
+```
+
 ### beta
 ```
 fastlane beta
