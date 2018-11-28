@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		19A3974B00D543E34EA56D88 /* Pods_Audiobook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA24EB28DF27B908B9F5910A /* Pods_Audiobook.framework */; };
 		605583E134E9630E05F4DF2D /* Pods_AudiobookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55954B99852D28940A888C0D /* Pods_AudiobookTests.framework */; };
+		A625595821AEBD2D005266D9 /* SettingsSwitcherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A625595721AEBD2D005266D9 /* SettingsSwitcherCell.swift */; };
 		A65D4AA021AD5F13009F479E /* SharedMediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D4A9F21AD5F13009F479E /* SharedMediaModel.swift */; };
 		A65D4AA221AD6048009F479E /* PlaceholderSharedMediaGalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D4AA121AD6048009F479E /* PlaceholderSharedMediaGalleryCell.swift */; };
 		A65D4AA521AD6099009F479E /* LoadingCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65D4AA421AD6099009F479E /* LoadingCollectionViewDataSource.swift */; };
@@ -96,6 +97,7 @@
 		55954B99852D28940A888C0D /* Pods_AudiobookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudiobookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7169B25657A041E95A565DF4 /* Pods-AudiobookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudiobookUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudiobookUITests/Pods-AudiobookUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A5FCF8D66EC8DE4DD39C357B /* Pods-AudiobookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudiobookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudiobookTests/Pods-AudiobookTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A625595721AEBD2D005266D9 /* SettingsSwitcherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSwitcherCell.swift; sourceTree = "<group>"; };
 		A65D4A9F21AD5F13009F479E /* SharedMediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedMediaModel.swift; sourceTree = "<group>"; };
 		A65D4AA121AD6048009F479E /* PlaceholderSharedMediaGalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderSharedMediaGalleryCell.swift; sourceTree = "<group>"; };
 		A65D4AA421AD6099009F479E /* LoadingCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCollectionViewDataSource.swift; sourceTree = "<group>"; };
@@ -407,6 +409,7 @@
 				A6D870FD21A7B466009E5DD6 /* BasicTableCell.swift */,
 				A6D8710221A7B7E8009E5DD6 /* DisclosureTableCell.swift */,
 				A6EEB8B521A8524100D60B76 /* SettingsSectionHeaderView.swift */,
+				A625595721AEBD2D005266D9 /* SettingsSwitcherCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -819,6 +822,7 @@
 				A68C143D21A5B85B000974E9 /* SettingsView.swift in Sources */,
 				A65D4AA221AD6048009F479E /* PlaceholderSharedMediaGalleryCell.swift in Sources */,
 				A68C144A21A5B8A9000974E9 /* Assembly.swift in Sources */,
+				A625595821AEBD2D005266D9 /* SettingsSwitcherCell.swift in Sources */,
 				A68C144321A5B87D000974E9 /* SettingsPresenter.swift in Sources */,
 				A68C145321A5C3C7000974E9 /* UITableViewCellExtensions.swift in Sources */,
 				A65F62BC21A5944B00F79957 /* ApplicationConfigurator.swift in Sources */,

@@ -50,8 +50,8 @@ extension SettingsView: UITableViewDataSource, UITableViewDelegate {
         return 3
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(DisclosureTableCell.self, isRegister: true)
-        cell?.titleLabel.text = "HUI"
+        let cell = tableView.dequeueReusableCell(SettingsSwitcherCell.self, isRegister: true)
+        cell?.textLabel?.text = "HUI"
         return cell ?? UITableViewCell()
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

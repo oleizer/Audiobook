@@ -27,18 +27,25 @@ class SettingsViewController: UIViewController {
     }
 
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        return nil
     }
+
     override func loadView() {
         view = SettingsView()
     }
     override func viewDidLoad() {
         super.viewDidLoad()
 //        navigationController?.navigationBar = NavBar()
-        title = "Settings"
+        title = "Настройки"
         navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
+extension SettingsViewController {
+    enum ViewControllerState {
+        case initial
+    }
+}
+
 extension SettingsViewController: SettingsDisplayLogic {
 
 }

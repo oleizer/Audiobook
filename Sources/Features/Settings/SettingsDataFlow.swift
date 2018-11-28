@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+enum Settings {
+    enum Fetching {
+        struct Request { }
+        
+    }
+}

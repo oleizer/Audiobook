@@ -9,7 +9,13 @@
 import UIKit
 
 public struct SettingsAssembly: Assembly {
-
+    var initialState: SettingsViewController.ViewControllerState?
+    
+    public func set(initialState: SettingsViewController.State) -> SettingsAssembly {
+        self.initialState = initialState
+        return self
+    }
+    
     func assembly() -> UIViewController {
         var presenter = SettingsPresenter()
         let interactor = SettingsInteractor(presenter: presenter)
